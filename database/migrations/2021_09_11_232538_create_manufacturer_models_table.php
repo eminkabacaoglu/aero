@@ -31,6 +31,6 @@ class CreateManufacturerModelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('manufacturer__models');
+        Schema::dropIfExists('manufacturer_models');
     }
 }

@@ -22,7 +22,10 @@
                         @method('PUT')
                         <div class="form-group">
                             <label for="inpName">{{ __('Manufacturer Name') }}</label>
-                            <input type="text" name="name" class="form-control" id="inpName" value="{{$manufacturer->manufacturer_name}}">
+                            <input type="text" name="name" class="form-control" id="inpName" value="{{ old('name') ?  old('name') : $manufacturer->manufacturer_nam }}">
+                            @error('name')
+                            {{ $message }}<br>
+                            @enderror
                         </div>
                         <button type="submit" class="btn btn-primary">{{ __('Create Manufacturer') }}</button>
                     </form>

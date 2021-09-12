@@ -100,7 +100,6 @@ class ManufacturerModelController extends Controller
         session()->flash('status',__('Model Updated!'));
         return redirect()->route('models.show',$model);
 
-
     }
 
     /**

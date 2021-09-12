@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\AircraftController;
 use App\Http\Controllers\ManufacturerController;
 use App\Http\Controllers\ManufacturerModelController;
-use App\Models\ManufacturerModel;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -22,6 +22,7 @@ Route::get('/', function () {
 
 Route::resource('manufacturers',ManufacturerController::class);
 Route::resource('models',ManufacturerModelController::class);
+Route::resource('aircrafts',AircraftController::class);
 
 
 

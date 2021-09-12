@@ -14,7 +14,7 @@ class ManufacturerModel extends Model
         return $this->belongsTo(Manufacturer::class);
     }
 
-    public function aircraft()
+    public function aircrafts()
     {
         return $this->hasMany(Aircraft::class);
     }

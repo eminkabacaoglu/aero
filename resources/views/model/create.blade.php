@@ -29,7 +29,10 @@
                               </select>
                               <br>
                             <label for="modelName">{{ __('Model Name') }}</label>
-                            <input type="text" name="name" class="form-control" id="modelName">
+                            <input type="text" name="name" class="form-control" id="modelName" value="{{ old('modelName') }}">
+                            @error('name')
+                            <br>{{ $message }}
+                            @enderror
                         </div>
                         <button type="submit" class="btn btn-primary">{{ __('Create Model') }}</button>
                     </form>

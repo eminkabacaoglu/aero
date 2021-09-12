@@ -21,7 +21,10 @@
                         @csrf
                         <div class="form-group">
                             <label for="inpName">{{ __('Manufacturer Name') }}</label>
-                            <input type="text" name="name" class="form-control" id="inpName">
+                            <input type="text" name="name" class="form-control" id="inpName" value="{{ old('name') }}">
+                            @error('name')
+                            <br>{{ $message }}
+                            @enderror
                         </div>
                         <button type="submit" class="btn btn-primary">{{ __('Create Manufacturer') }}</button>
                     </form>

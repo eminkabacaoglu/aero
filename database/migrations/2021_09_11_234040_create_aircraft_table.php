@@ -16,10 +16,13 @@ class CreateAircraftTable extends Migration
     {
         Schema::create('aircraft', function (Blueprint $table) {
             $table->id();
+            $table->string('tail_number');
             $table->foreignIdFor(ManufacturerModel::class);
             $table->year('year');
-            $table->tinyInteger('flight_hours');
+            $table->Integer('flight_hours');
             $table->timestamps();
+
+            $table->unique(['tail_number']);
         });
     }
 

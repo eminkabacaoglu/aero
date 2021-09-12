@@ -63,6 +63,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('models.index') }}">{{ __('Models') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('aircrafts.index') }}">{{ __('Aircrafts') }}</a>
+                        </li>
 
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
