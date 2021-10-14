@@ -67,6 +67,23 @@
                             <a class="nav-link" href="{{ route('aircrafts.index') }}">{{ __('Aircrafts') }}</a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('aircrafts.index') }}">{{ __('Students') }}</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('usertypes.index') }}">{{ __('User Types') }}</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('aircrafts.index') }}">{{ __('Instructors') }}</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('aircrafts.index') }}">{{ __('Classes') }}</a>
+                        </li>
+
+
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
