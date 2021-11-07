@@ -12,6 +12,13 @@ class ManufacturerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
+
     public function index()
     {
         $manufacturers=Manufacturer::all()->sortBy('manufacturer_name');

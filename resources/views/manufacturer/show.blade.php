@@ -7,10 +7,9 @@
             <div class="card">
                 <div class="card-header">
                     {{ $manufacturer->manufacturer_name }}
-                    @auth
+
                     <a href="{{ route('manufacturers.edit', $manufacturer) }}"
                         class="btn btn-sm btn-warning">{{ __('Edit Manufacturer') }}</a>
-                    @endauth
                 </div>
 
                 <div class="card-body">

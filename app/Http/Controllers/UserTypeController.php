@@ -13,6 +13,11 @@ class UserTypeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
     public function index()
     {
         $userTypes=UserType::all()->sortBy('type_name');

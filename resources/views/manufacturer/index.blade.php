@@ -7,10 +7,8 @@
             <div class="card">
                 <div class="card-header">
                     {{ __('Manufacturers') }}
-                    @auth
                     <a href="{{ route('manufacturers.create') }}"
                         class="btn btn-sm btn-primary">{{ __('New Manufacturer') }}</a>
-                    @endauth
                 </div>
 
                 <div class="card-body">
